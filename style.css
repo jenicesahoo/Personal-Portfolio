@@ -1,0 +1,104 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: "Georgia", serif;
+    background: #fff4fa;
+    color: #4a2c35;
+}
+
+/* Floral Background Decoration */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image: url("https://www.transparenttextures.com/patterns/pink-floral.png");
+    opacity: 0.25;
+    pointer-events: none;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background: #ffd6e9;
+    border-bottom: 2px solid #f3b5d2;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #4a2c35;
+    font-weight: bold;
+}
+
+nav ul li a.active {
+    border-bottom: 2px solid #4a2c35;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.profile-img {
+    border-radius: 50%;
+    border: 4px solid #f3b5d2;
+}
+
+.hero h2 span {
+    color: #d14a7b;
+}
+
+.description {
+    width: 60%;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* Projects */
+.projects-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.project-card {
+    background: #ffe9f3;
+    border: 2px solid #e3a7c2;
+    padding: 20px;
+    border-radius: 12px;
+    width: 250px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 7px 14px;
+    background: #d14a7b;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #ffd6e9;
+    margin-top: 40px;
+}
